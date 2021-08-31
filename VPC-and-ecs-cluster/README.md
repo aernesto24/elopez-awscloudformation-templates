@@ -22,5 +22,5 @@ aws cloudformation --profile <your profile> --region=<region-to-deploy> create-s
 4. you can update your stack using:
 
 ```bash
-aws cloudformation --profile <your profile> --region=<region-to-deploy> create-stack --update-name architecture-test --template-body file://./vpc-and-ecs-cluister.yml --capabilities CAPABILITY_IAM
+aws cloudformation --profile <your profile> --region=<region-to-deploy> update-stack --stack-name architecture-test --template-body file://./vpc-and-ecs-cluister.yml --capabilities CAPABILITY_IAM
 ```
